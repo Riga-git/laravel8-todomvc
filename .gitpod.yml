@@ -1,2 +1,5 @@
 image:
-  file: Dockerfile
+  file: .gitpod.Dockerfile
+tasks:
+  - init: bash .gitpod-init.sh
+    command: php artisan serve
