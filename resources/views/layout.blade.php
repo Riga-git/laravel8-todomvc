@@ -1,12 +1,10 @@
 <html>
     <head>
         <title>TodoMVC</title>
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}">
     </head>
     <body>
-        <div id="menu">
-            @yield('menu')
-        </div>
-        <div id="content">
+        <div class="container mx-auto">
             @yield('content')
         </div>
     </body>
