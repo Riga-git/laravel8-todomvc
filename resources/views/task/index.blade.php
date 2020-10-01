@@ -4,20 +4,22 @@
 @section('content')
 <h1>Task list</h1>
 
+<a href="{{ route('tasks.create') }}">New task</a>
+
 <table class="table-auto">
   <thead>
     <tr>
-      <th class="px-4 py-2">Title</th>
-      <th class="px-4 py-2">Author</th>
-      <th class="px-4 py-2">Views</th>
+      <th class="px-4 py-2">Id</th>
+      <th class="px-4 py-2">Name</th>
+      <th class="px-4 py-2">Actions</th>
     </tr>
   </thead>
   <tbody>
     @foreach($tasks as $task)
         <tr>
-            <td>{{ $task['id'] }}</td>
-            <td>{{ $task['name'] }}</td>
-            <td><a href="{{ route('tasks.show', ['task' => $task['id']]) }}">Show</a></td>
+            <td>{{ $task->id }}</td>
+            <td>{{ $task->name }}</td>
+            <td><a href="{{ route('tasks.show', ['task' => $task->id]) }}">Show</a></td>
         </tr>
     @endforeach
     </tbody>
