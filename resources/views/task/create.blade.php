@@ -17,7 +17,7 @@
         <input type="text" id="name" name="name" />
     </div>
 
-    <button type="submit">Save new task</button>
+    <button type="submit" class="btn">Save new task</button>
     <a href="{{ route('tasks.index') }}">Return to task list</a>
 </form>
 
