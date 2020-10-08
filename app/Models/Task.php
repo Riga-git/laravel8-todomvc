@@ -11,7 +11,7 @@ class Task extends Model
 
     protected $with = ['tasks'];
 
-    protected $fillable = ['name'];
+    //protected $fillable = ['name'];
 
     public function project()
     {
