@@ -2,7 +2,7 @@
 @extends('layout')
 
 @section('content')
-<h1>Task list</h1>
+<h1>TodoMVC</h1>
 
 <a href="{{ route('tasks.create') }}" class="btn">New task</a>
 
