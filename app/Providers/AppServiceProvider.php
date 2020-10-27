@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
 
         Task::observe(TaskObserver::class);
 
-        Paginator::defaultView('vendor.pagination.materialize-css');
-        Paginator::defaultSimpleView('vendor.pagination.simple-materialize-css');
+        Paginator::defaultView('pagination.materialize-css');
+        Paginator::defaultSimpleView('pagination.simple-materialize-css');
     }
 }
